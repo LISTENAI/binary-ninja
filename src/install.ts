@@ -1,20 +1,13 @@
-import * as download from 'download';
+import download from '@xingrz/download2';
 import { rm } from 'fs/promises';
-import { platform } from 'os';
-import { join } from 'path';
+import { HOME } from './index';
 
-const PREFIX = 'https://cdn.iflyos.cn/public/lisa-binary/ninja/';
+const PACKAGE = 'ninja';
+const VERSION = '1.10.2';
 
-const SUFFIX = (() => {
-  switch (platform()) {
-    case 'win32': return 'win';
-    case 'darwin': return 'mac';
-    default: return 'linux';
-  }
-})();
+const NAME = `${PACKAGE}-${VERSION}-${process.platform}_${process.arch}.tar.zst`;
 
-const NAME = `ninja-v1.10.2-${SUFFIX}.zip`;
-const HOME = join(__dirname, '..', 'binary');
+const URL = `https://cdn.iflyos.cn/public/lisa-binary/${PACKAGE}/${NAME}`;
 
 (async () => {
 
@@ -23,7 +16,7 @@ const HOME = join(__dirname, '..', 'binary');
   } catch (e) {
   }
 
-  await download(`${PREFIX}${NAME}`, HOME, {
+  await download(URL, HOME, {
     extract: true,
   });
 
