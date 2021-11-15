@@ -1,6 +1,6 @@
 {
   "name": "@binary/ninja",
-  "version": "1.1.0-v1.10.2",
+  "version": "1.1.1-1.10.2",
   "description": "ninja",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -19,8 +19,8 @@
   ],
   "license": "UNLICENSED",
   "dependencies": {
-    "@binary/type": "^1.0.3",
-    "@xingrz/download2": "^9.0.0-alpha.2"
+    "@binary/type": "^1.0.4",
+    "@xingrz/download2": "^9.0.0-alpha.4"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
