@@ -1,6 +1,6 @@
 {
   "name": "@binary/ninja",
-  "version": "1.1.1-1.10.2",
+  "version": "1.1.2-1.11.1",
   "description": "ninja",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,6 +15,7 @@
   },
   "author": "xychen <xychen@listenai.com>",
   "maintainers": [
+    "lpmadmin <lpm.admin@listenai.com>",
     "xychen <xychen@listenai.com"
   ],
   "license": "UNLICENSED",

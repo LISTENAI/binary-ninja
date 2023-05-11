@@ -3,7 +3,7 @@ import { rm } from 'fs/promises';
 import { HOME } from './index';
 
 const PACKAGE = 'ninja';
-const VERSION = '1.10.2';
+const VERSION = '1.11.1';
 
 const NAME = `${PACKAGE}-${VERSION}-${process.platform}_${process.arch}.tar.zst`;
 
